@@ -15,7 +15,7 @@ const navigation = {
     },
   ],
   company: [
-    { name: "About DTABS", href: "about" },
+    { name: "About DTabs", href: "about" },
     { name: "Our Philosophy", href: "technology" },
     { name: "Impact & Scale", href: "impact" },
     { name: "Careers", href: "careers" },

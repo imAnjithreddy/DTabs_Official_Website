@@ -154,7 +154,6 @@ export default function Hero() {
       const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
 
       // 1. Initial State Setup
-      gsap.set(".badge-pill", { opacity: 0, y: -15 });
       gsap.set(".reveal-line", { yPercent: 120, rotateZ: 2 });
       gsap.set(".fade-item", { opacity: 0, y: 25 });
       gsap.set(".visual-mask", { clipPath: "inset(100% 0% 0% 0% round 32px)" });
@@ -162,12 +161,7 @@ export default function Hero() {
       gsap.set(".floating-card", { opacity: 0, y: 30, scale: 0.92 });
 
       // 2. Coordinated Sequence
-      tl.to(".badge-pill", {
-        opacity: 1,
-        y: 0,
-        duration: 0.8,
-      })
-        .to(
+      tl.to(
           ".reveal-line",
           {
             yPercent: 0,
@@ -175,7 +169,6 @@ export default function Hero() {
             duration: 1.1,
             stagger: 0.12,
           },
-          "-=0.5",
         )
         .to(
           ".visual-mask",
