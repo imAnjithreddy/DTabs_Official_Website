@@ -350,7 +350,7 @@ export default function Hero() {
 
             {/* Supporting Description */}
             <p className="fade-item mt-8 max-w-[530px] text-base sm:text-lg leading-relaxed text-[#5c5c5c] font-normal">
-              DTABS Technologies designs and builds intelligent digital
+              DTabs Technologies designs and builds intelligent digital
               platforms that connect people, processes, data, and technology —
               from education to enterprise.
             </p>
@@ -434,7 +434,7 @@ export default function Hero() {
                 <div className="max-w-[320px]">
                   <div className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 text-[10px] font-medium tracking-[0.16em] uppercase backdrop-blur-md">
                     <Sparkles size={11} className="text-amber-300" />
-                    DTABS Technologies
+                    DTabs Technologies
                   </div>
                   <p className="mt-3.5 text-xl sm:text-2xl font-medium leading-snug tracking-tight">
                     Building technology that moves organizations forward.

@@ -63,7 +63,7 @@ export default function Footer() {
             <div className="max-w-md">
               <Link href="/" className="inline-block">
                 <span className="text-3xl font-medium tracking-[-0.04em] text-[#111]">
-                  DTABS Technologies
+                  DTabs Technologies
                 </span>
               </Link>
 

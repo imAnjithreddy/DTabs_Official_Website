@@ -24,10 +24,9 @@ export default function CTA() {
   });
 
   const onSubmit = (data: ContactFormData) => {
-    const recipient = "hello@dtabs.com";
-    const subject = `Inquiry: ${data.platformInterest} - ${data.fullName}${
-      data.organization ? ` (${data.organization})` : ""
-    }`;
+    const recipient = "tanush@dtabs.tech";
+    const subject = `Inquiry: ${data.platformInterest} - ${data.fullName}${data.organization ? ` (${data.organization})` : ""
+      }`;
 
     const body = `Name: ${data.fullName}
 Email: ${data.email}
@@ -103,10 +102,10 @@ ${data.message}`;
                     Email Directly
                   </p>
                   <a
-                    href="mailto:hello@dtabs.com"
+                    href="mailto:tanush@dtabs.tech"
                     className="text-sm font-medium text-[#111] hover:underline"
                   >
-                    hello@dtabs.com
+                    tanush@dtabs.tech
                   </a>
                 </div>
               </div>
@@ -120,7 +119,7 @@ ${data.message}`;
                     Headquarters
                   </p>
                   <p className="text-sm font-medium text-[#111]">
-                    DTABS Technologies · Bengaluru, India
+                    DTabs Technologies · Bengaluru, India
                   </p>
                 </div>
               </div>
@@ -176,11 +175,10 @@ ${data.message}`;
                     {...register("fullName", {
                       required: "Full name is required",
                     })}
-                    className={`mt-2 w-full rounded-xl border bg-[#fcfcfb] px-4 py-3 text-sm text-[#111] placeholder:text-[#aaa] focus:bg-white focus:outline-none focus:ring-1 ${
-                      errors.fullName
-                        ? "border-red-500 focus:ring-red-500"
-                        : "border-black/[0.1] focus:ring-black"
-                    }`}
+                    className={`mt-2 w-full rounded-xl border bg-[#fcfcfb] px-4 py-3 text-sm text-[#111] placeholder:text-[#aaa] focus:bg-white focus:outline-none focus:ring-1 ${errors.fullName
+                      ? "border-red-500 focus:ring-red-500"
+                      : "border-black/[0.1] focus:ring-black"
+                      }`}
                   />
                   {errors.fullName && (
                     <p className="mt-1.5 text-xs text-red-500">
@@ -203,11 +201,10 @@ ${data.message}`;
                         message: "Invalid email address",
                       },
                     })}
-                    className={`mt-2 w-full rounded-xl border bg-[#fcfcfb] px-4 py-3 text-sm text-[#111] placeholder:text-[#aaa] focus:bg-white focus:outline-none focus:ring-1 ${
-                      errors.email
-                        ? "border-red-500 focus:ring-red-500"
-                        : "border-black/[0.1] focus:ring-black"
-                    }`}
+                    className={`mt-2 w-full rounded-xl border bg-[#fcfcfb] px-4 py-3 text-sm text-[#111] placeholder:text-[#aaa] focus:bg-white focus:outline-none focus:ring-1 ${errors.email
+                      ? "border-red-500 focus:ring-red-500"
+                      : "border-black/[0.1] focus:ring-black"
+                      }`}
                   />
                   {errors.email && (
                     <p className="mt-1.5 text-xs text-red-500">
@@ -259,11 +256,10 @@ ${data.message}`;
                   {...register("message", {
                     required: "Please provide a brief message",
                   })}
-                  className={`mt-2 w-full rounded-xl border bg-[#fcfcfb] px-4 py-3 text-sm text-[#111] placeholder:text-[#aaa] focus:bg-white focus:outline-none focus:ring-1 ${
-                    errors.message
-                      ? "border-red-500 focus:ring-red-500"
-                      : "border-black/[0.1] focus:ring-black"
-                  }`}
+                  className={`mt-2 w-full rounded-xl border bg-[#fcfcfb] px-4 py-3 text-sm text-[#111] placeholder:text-[#aaa] focus:bg-white focus:outline-none focus:ring-1 ${errors.message
+                    ? "border-red-500 focus:ring-red-500"
+                    : "border-black/[0.1] focus:ring-black"
+                    }`}
                 />
                 {errors.message && (
                   <p className="mt-1.5 text-xs text-red-500">
